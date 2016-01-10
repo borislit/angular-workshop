@@ -1,0 +1,15 @@
+<div class="list-manager">
+    <div class="list-manager__title">{{listManager.title}}</div>
+    <div>
+        <ul class="list-group list-manager__list">
+            <li class="list-group-item" ng-repeat="item in listManager.inventory"
+                ng-click="listManager.selectItem(item)">{{item}}
+            </li>
+        </ul>
+        <ul class="list-group list-manager__list">
+            <li class="list-group-item" ng-repeat="selectedItem in listManager.selectedItems">{{selectedItem}}</li>
+        </ul>
+    </div>
+</div>
+<button type="button" ng-click="listManager.save()">Save</button>
+<a href="#/selected">See Selected Items</a>

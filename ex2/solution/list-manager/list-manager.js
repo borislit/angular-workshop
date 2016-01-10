@@ -7,7 +7,7 @@ angular.module('myApp').component('listManager',{
   bindings: {
     title:'@'
   },
-  templateUrl:'list-manager-solution/list-manager.html',
+  templateUrl:'list-manager/list-manager.html',
   controller: function(){
     this.inventory = ['Bread','Streak', 'Eggs', 'Mufleta'];
     this.selectedItems = [];
