@@ -14,7 +14,7 @@ angular.module('myApp').component('listManager', {
       this.inventory.splice(selectedItemIndex, 1);
 
       this.selectedItems.push(item);
-    }
+    };
 
     this.save = function () {
       inventoryService.selectedItems = this.selectedItems;
